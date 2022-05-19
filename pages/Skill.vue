@@ -11,7 +11,7 @@
         md="6"
         class="md-6"
       >
-        <v-card>
+        <v-card shaped elevation="9" class="ma-1">
           <v-row>
             <v-col cols="4">
               <v-img :src="skill.image"></v-img>

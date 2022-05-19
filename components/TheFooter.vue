@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-footer padless absolute app>
+    <v-footer absolute>
       <v-col class="text-center" cols="12">
         &copy; {{ new Date().getFullYear() }} - S.S.
       </v-col>

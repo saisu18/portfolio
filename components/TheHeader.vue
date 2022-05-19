@@ -3,8 +3,8 @@
     <v-toolbar flat fixed>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title v-text="title" />
-      <v-row>
-        <v-col v-for="(item, i) in items" :key="i">
+      <v-tabs>
+        <v-tab v-for="(item, i) in items" :key="i">
           <v-tooltip bottom>
             <template #activator="{ on, attrs }">
               <v-btn icon nuxt :to="item.to" v-bind="attrs" v-on="on">
@@ -13,8 +13,8 @@
             </template>
             <span>{{ item.title }}</span>
           </v-tooltip>
-        </v-col>
-      </v-row>
+        </v-tab>
+      </v-tabs>
     </v-toolbar>
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list nav dense>
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       drawer: false,
-      title: 'Portfolio Websites',
+      title: 'S.Saisu Websites',
       items: [
         {
           icon: 'mdi-home',
@@ -65,9 +65,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-toolbar__title {
+  overflow: visible !important;
+  margin-right: 50px !important;
+}
 .v-app-bar__nav-icon {
-  display_pc {
-    display: none;
+  @include display_pc {
+    display: none !important;
+  }
+}
+.v-tabs {
+  display: none;
+
+  @include display_pc {
+    display: block !important;
   }
 }
 </style>
