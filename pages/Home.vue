@@ -3,11 +3,10 @@
     <v-row>
       <v-col cols="12" class="text-center"><h1>ホームページ</h1></v-col>
     </v-row>
-    <v-row>
-      <v-col cols="12" class="pa-md-4 mx-lg-auto">
-        <!-- <img src="/home01.jpg" alt="ホームページ用画像" /> -->
-      </v-col>
-    </v-row>
+    <v-img
+      lazy-src="https://picsum.photos/id/11/10/6"
+      src="/home01.jpg"
+    ></v-img>
   </div>
 </template>
 
