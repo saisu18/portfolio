@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-footer absolute> &copy; {{ new Date().getFullYear() }} - S.S. </v-footer>
+    <v-footer absolute> &copy; 2022 - S.S. </v-footer>
   </div>
 </template>
 
